@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#control {
+    margin: 5px;
+    padding: 5px;
+    background-color: #fff4;
+    border-radius: 5px;
+    color: white;
+    font-family: "Symbola";
+    font-size: 20px;
+    user-select: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#control select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.wl-icon {
+    display: inline-block;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+@font-face {
+    font-family: "Symbola";
+    src: url(/fonts/Symbola.ttf);
+}

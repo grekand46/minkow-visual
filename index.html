@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacetime Diagram Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="content"></div>
+    <div id="control">
+        <select id="preset-switch">
+            <!-- <option>Twin Paradox</option> -->
+        </select>
+        <br>
+        <br>
+        <div id="fg-control">
+            <b>Frame of Reference:</b>
+            <br>
+            <input id="test-input" type="range" step="any">
+            <br>
+            <span id="ref-speed">(v = 0.9<i>c</i>)</span>
+            <p>------------------------------</p>
+        </div>
+        <p><b>World Lines:</b></p>
+        <div id="world-lines"></div>
+        <div id="ev-control">
+            <p>------------------------------</p>
+            <b>Click to mark events</b><br>
+            <button id="clear-ev">Clear all</button>
+        </div>
+    </div>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
