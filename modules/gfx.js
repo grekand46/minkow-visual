@@ -12,12 +12,15 @@ export class Gfx {
         this._fontFamily = "";
         this._fontSize = 0.75;
 
-        const font = new FontFace("Symbola", "url(/fonts/Symbola.ttf)");
+        const font = new FontFace("Symbola", "url(../fonts/Symbola.ttf)");
         font.load().then((font) => {
             document.fonts.add(font);
             const cb = this._callbacks.fontload;
             if (cb !== undefined) cb();
             //this._ctx.font = "30px Symbola";
+        }).catch(() => {
+            const cb = this._callbacks.fontload;
+            if (cb !== undefined) cb();
         });
     }
 
